@@ -1,0 +1,15 @@
+jobs :
+  - job : PRODUCT_DERIVATION_JOB
+    datacut : {
+        global : {
+            memoryArgs : -Dmap.reduce.memory=xnx1000m
+        },
+        datacut1 : {
+            memoryArgs : -Dmap.reduce.memory=xnx1000m
+        }
+    }
+#  - job : PRODUCT_DERIVAtion_INTERDAY
+#    datacut: {
+#        global: -Dmap.reduce.memory=xnx1000m,
+#        datacut1 : -Dmap.reduce.memory=xnx1000m
+#    }
